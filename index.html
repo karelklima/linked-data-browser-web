@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Linked Data Explorer">
+    <meta name="author" content="Karel Klima">
+
+    <title>Linked Data Explorer - A customizable Linked Data browser</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/explorer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-share-alt"></i>  <span class="light">Linked Data</span> Explorer
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#thesis">Thesis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#author">Author</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Linked Data Explorer</h1>
+                        <p class="intro-text">A <i>fully customizable</i> generic Linked Data browser.<br>Created in Prague.</p>
+                        <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <a href="http://linked-data-browser.herokuapp.com/" class="btn btn-default btn-lg" target="_blank">
+                                    <i class="fa fa-play-circle fa-fw"></i> <span class="network-name">Live preview</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/karelklima/linked-data-browser"  target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                        </ul>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About the project</h2>
+                <p>Linked Data Explorer is a search and browse tool for Linked Data with rich customization capabilities baked in.</p>
+                <p>The application features an innovative two-level customization approach offering customization options to both expert and non-expert users to alter the display of the browsed data resources.</p>
+                <p>The basic building blocks of the browser are <i>miniapplications</i> &ndash; small widgets responsible to display arbitrary information about a resource. The simplest form of a <i>miniapplication</i>
+                is a custom template that defines how to display a particular resource property. In addition, the project enables users to define custom SPARQL queries and define conditions and priorities
+                when and in what order to present defined <i>miniapplications</i>.<p>
+                <p>When browsing a resource, a collection of <i>miniapplications</i> describing the resource is presented to the user. The user can then alter the default behavior by creating a <i>custom view</i>
+                &ndash; a definition of a page layout and order of miniapplications. Furthermore, the user can specify a class of resources to apply the <i>custom view</i> to.
+                For example, a single <i>custom view</i> can be applied to all data entities of a particular type.</p>
+                <p><i>Custom views</i> are created in a What You See Is What You Get (WYSIWYG) manner &ndash; the user can rearrange the layout of miniapplications by drag and drop operations with immediate visual feedback.
+                Thus, the user can perform this task without any expert knowledge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Features</h2>
+                    <div class="feature-items">
+                        <div class="feature col-md-6">
+                            <i class="fa fa-fw fa-lightbulb-o"></i>
+                            <div class="feature-content icon-offset">
+                                <h4>Unmatched customization capabilities</h4>
+                                <p>The innovative two-level customization system provides tools and options for both expert and non-expert users</p>
+                            </div>
+                        </div>
+                    <div class="feature col-md-6">
+                        <i class="fa fa-fw fa-eye"></i>
+                        <div class="feature-content icon-offset">
+                            <h4>WYSIWYG editing</h4>
+                            <p>Altering the data display by drag and drop operations using real data.</p>
+                        </div>
+                    </div>
+                    <div class="feature col-md-6">
+                        <i class="fa fa-fw fa-cubes"></i>
+                        <div class="feature-content icon-offset">
+                            <h4>Multiple data sources support</h4>
+                            <p>Multiple SPARQL endpoints can be defined and the user can select the one to query.</p>
+                        </div>
+                    </div>
+                    <div class="feature col-md-6">
+                        <i class="fa fa-fw fa-font"></i>
+                        <div class="feature-content icon-offset">
+                            <h4>Language aware browsing</h4>
+                            <p>The user can select a language to display the data in.</p>
+                        </div>
+                    </div>
+                    <div class="feature col-md-6">
+                        <i class="fa fa-fw fa-github"></i>
+                        <div class="feature-content icon-offset">
+                            <h4>Free and Open</h4>
+                            <p>Linked Data Explorer is Open Source, and all the code is available on <a href="https://github.com/karelklima/linked-data-browser">GitHub.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                    <p class="intro-text">To check the features out, press the button below.</p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="http://linked-data-browser.herokuapp.com/" class="btn btn-default btn-lg" target="_blank">
+                                <i class="fa fa-play-circle fa-fw"></i> <span class="network-name">Live preview</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Thesis Section -->
+    <section id="thesis" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Thesis</h2>
+                <p>This project was realized as a master thesis assignment in Charles University in Prague, Faculty of Mathematics and Physics.</p>
+                <p>Feel free to download the thesis to investigate the project motivation, architecture, design and key implementation issues.</p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="LinkedDataExplorer_Thesis.pdf" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-file-pdf-o fa-fw"></i> <span class="network-name">Download the thesis</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section id="author" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Author</h2>
+                <div class="author-picture"></div>
+                <h3>Karel Klima</h3>
+                <p>Author of Linked Data Explorer</p>
+                <p><a href="mailto:karelklima@karelklima.com">karelklima@karelklima.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="http://cz.linkedin.com/in/karelklima" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/karelklima" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Karel Klima 2015</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/explorer.js"></script>
+
+</body>
+
+</html>
